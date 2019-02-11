@@ -1,4 +1,5 @@
 version: '2'
+
 services:
   db:
     image: mysql:5.7
@@ -19,4 +20,4 @@ services:
     volumes:
       - "./tomcat/webapps:/usr/local/tomcat/webapps"
     depends_on:
-      - db
+      - "db"
